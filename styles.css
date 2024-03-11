@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    background: #000;
+}
+.wrapper{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 500px;
+    border: 5px solid #333;
+    background: transparent;
+    border-radius: 10px;
+    transition: .5s;
+}
+.wrapper:hover{
+    border: 5px solid pink;
+    box-shadow: 0 0 20px pink, inset 0 0 20px pink;
+}
+.wrapper:hover h2{
+    color: pink;
+}
+/* form{
+    height: 100%;
+} */
+h2{
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    transition: .5s;
+}
+.input-box{
+    position: relative;
+    width: 320px;
+    margin: 30px 0;
+}
+.input-box input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #333;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: white;
+    padding: 0 10px 0 35px;
+    transition: .5s;
+}
+.wrapper:hover .input-box input{
+    border: 2px solid pink;
+    box-shadow: 0 0 10px pink, inset 0 0 10px pink;
+}
+.input-box input::placeholder{
+    color: rgba(255, 255, 255, .3);
+}
+.input-box .icon{
+    position: absolute;
+    left: 10px;
+    color: white;
+    font-size: 1.2rem;
+    line-height: 55px;
+    transition: .5s;
+}
+.wrapper:hover .input-box .icon{
+    color: pink;
+}
+.forget{
+    margin: -15px 0 15px;
+}
+.forget a{
+    color: white;
+    font-size: .9em;
+    text-decoration: none;
+    font-weight: 500;
+}
+.forget a:hover{
+    font-weight: 700;
+}
+button{
+    position: relative;
+    width: 100%;
+    height: 45px;
+    background: #333;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 1em;
+    font-weight: 500;
+    transition: .5s;
+}
+.wrapper:hover button{
+    background: pink;
+    color: black;
+    box-shadow: 0 0 20px pink;
+}
+.register{
+    font-size: .9em;
+    text-align: center;
+    margin: 25px 0;
+}
+.register p{
+    color: white;
+}
+.register p a{
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .5s;
+}
+.wrapper:hover .register p a{
+    color: pink;
+}
+.register p a:hover{
+    font-weight: 700;
+}
